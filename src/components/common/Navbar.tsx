@@ -67,14 +67,14 @@ const Navbar = () => {
         <div className="lg:flex hidden items-center gap-4 font-medium lg:gap-[75px] text-base">
           <NavLink className={({ isActive }) => `${isActive ? "font-semibold underline decoration-black" : ""} hover:translate-x-1 ease-in-out duration-200 hover:text-[#B88E2F] hover:decoration-[#B88E2F]`} to='/'>Home</NavLink>
           <NavLink className={({ isActive }) => `${isActive ? "font-semibold underline decoration-black" : ""} hover:translate-x-1 ease-in-out duration-200 hover:text-[#B88E2F] hover:decoration-[#B88E2F]`} to='/shop'>Shop</NavLink>
-          <NavLink className={({ isActive }) => `${isActive ? "font-semibold underline decoration-black" : ""} hover:translate-x-1 ease-in-out duration-200 hover:text-[#B88E2F] hover:decoration-[#B88E2F]`} to='/blog'>Blog</NavLink>
+          {/* <NavLink className={({ isActive }) => `${isActive ? "font-semibold underline decoration-black" : ""} hover:translate-x-1 ease-in-out duration-200 hover:text-[#B88E2F] hover:decoration-[#B88E2F]`} to='/blog'>Blog</NavLink> */}
           <NavLink className={({ isActive }) => `${isActive ? "font-semibold underline decoration-black" : ""} hover:translate-x-1 ease-in-out duration-200 hover:text-[#B88E2F] hover:decoration-[#B88E2F]`} to='/contact'>Contact</NavLink>
         </div>
 
         <div className="lg:flex hidden items-center lg:gap-11">
-          <Link to={accountPath}>
+          {<Link to={accountPath}>
             <img src={account} alt="account-icon" />
-          </Link>
+          </Link> }
           <Link to="/search">
             <img src={search} alt="search-icon" />
           </Link>
@@ -98,8 +98,8 @@ const Navbar = () => {
         <div className={`lg:hidden bg-white text-2xl absolute z-20 w-full h-full bottom-0 py-32 pl-3 flex flex-col gap-10 duration-500 ${isMenuOpen ? 'left-0' : 'left-[-100%]'}`}>
           <NavLink className={({ isActive }) => isActive ? "font-bold underline decoration-black" : ""} onClick={() => setIsMenuOpen(!isMenuOpen)} to='/'>Home</NavLink>
           <NavLink className={({ isActive }) => isActive ? "font-bold underline decoration-black" : ""} onClick={() => setIsMenuOpen(!isMenuOpen)} to='/shop'>Shop</NavLink>
-          <NavLink className={({ isActive }) => isActive ? "font-bold underline decoration-black" : ""} onClick={() => setIsMenuOpen(!isMenuOpen)} to='/blog'>Blog</NavLink>
-          <NavLink className={({ isActive }) => isActive ? "font-bold underline decoration-black" : ""} onClick={() => setIsMenuOpen(!isMenuOpen)} to='/contact'>Contact</NavLink>
+          {/* <NavLink className={({ isActive }) => isActive ? "font-bold underline decoration-black" : ""} onClick={() => setIsMenuOpen(!isMenuOpen)} to='/blog'>Blog</NavLink> */}
+          {/* <NavLink className={({ isActive }) => isActive ? "font-bold underline decoration-black" : ""} onClick={() => setIsMenuOpen(!isMenuOpen)} to='/contact'>Contact</NavLink> */}
           <NavLink className={({ isActive }) => isActive ? "font-bold underline decoration-black" : ""} onClick={() => setIsMenuOpen(!isMenuOpen)} to={`${userToken?.length ? '/profile/edit' : '/login'}`}>Profile</NavLink>
           <NavLink className={({ isActive }) => isActive ? "font-bold underline decoration-black" : ""} onClick={() => setIsMenuOpen(!isMenuOpen)} to="/search">Search</NavLink>
           <NavLink className={({ isActive }) => isActive ? "font-bold underline decoration-black" : ""} onClick={() => setIsMenuOpen(!isMenuOpen)} to="/favorites">Favorites</NavLink>

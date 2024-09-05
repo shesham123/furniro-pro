@@ -4,15 +4,20 @@ import FuniroFurniture from "../components/home/FuniroFurniture";
 import SLickRoomSlider from "../components/home/SLickRoomSlider";
 import { Reveal } from "../components/common/index";
 import PrimaryHero from "../components/home/PrimaryHero";
+import { FeaturesBar, SecondaryHero } from "../components/common/index";
+
+
+
 
 const Home = () => {
   return (
     <>
       <PrimaryHero />
       <Reveal><ProductRange /></Reveal>
-      <ProductsContainer />
+      {/* <ProductsContainer />
       <SLickRoomSlider />
-      <Reveal><FuniroFurniture /></Reveal>
+      <Reveal><FuniroFurniture /></Reveal> */}
+      <Reveal><FeaturesBar /></Reveal>
     </>
   )
 }
