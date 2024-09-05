@@ -4,7 +4,7 @@ import productReducer from '../redux/features/productSlice';
 import searchReducer from '../redux/features/searchSlice';
 import paginationReducer from '../redux/features/paginationSlice';
 import homeReducer from '../redux/features/homeSlice';
-import blogReducer from '../redux/features/blogSlice';
+// import blogReducer from '../redux/features/blogSlice';
 import contactReducer from '../redux/features/contactSlice';
 import authReducer from '../redux/features/authSlice';
 import shopReducer from '../redux/features/shopSlice';
@@ -20,7 +20,7 @@ export const rootReducer = combineReducers({
     search: searchReducer,
     pagination: paginationReducer,
     home: homeReducer,
-    blog: blogReducer,
+    // blog: blogReducer,
     contact: contactReducer,
     auth: authReducer,
     shop: shopReducer,
