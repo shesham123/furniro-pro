@@ -15,7 +15,7 @@ import { persistor, store } from './redux/app/store.ts';
 
 const Home = lazy(() => import('./pages/Home.tsx'));
 const Shop = lazy(() => import('./pages/Shop.tsx'));
-const Blog = lazy(() => import('./pages/Blog.tsx'));
+// const Blog = lazy(() => import('./pages/Blog.tsx'));
 const Contact = lazy(() => import('./pages/Contact.tsx'));
 const ProductDetail = lazy(() => import('./pages/ProductDetail.tsx'));
 const Cart = lazy(() => import('./pages/Cart.tsx'));
@@ -33,7 +33,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={<App />}>
       <Route index element={<Home />} />
       <Route path='shop' element={<Shop />} />
-      <Route path='blog' element={<Blog />} />
+      {/* <Route path='blog' element={<Blog />} /> */}
       <Route path='contact' element={<Contact />} />
       <Route path='productDetail/:productId' element={<ProductDetail />} />
       <Route path='contact' element={<Contact />} />
